@@ -135,6 +135,8 @@ textarea {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .navigation .nav-item:hover,
@@ -145,8 +147,6 @@ textarea {
 .footer li a:hover,
 .footer li a:focus {
   color: var(--hover-button-color);
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 .addresses .address-item {
@@ -155,6 +155,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .page-header .address {
@@ -245,14 +247,14 @@ textarea {
   text-align: center;
   color: var(--secondary-main-text-color);
   cursor: pointer;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .banner .button-item:hover,
 .banner .button-item:focus {
   background: var(--secondary-hover-button-color);
   text-shadow: none;
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 /* Advantages */
@@ -436,6 +438,8 @@ textarea {
   width: 44px;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .main-team .svg-items .icon {
@@ -446,8 +450,6 @@ textarea {
 .main-team .svg-items .link:focus {
   background-color: var(--hover-button-color);
   color: var(--secondary-main-text-color);
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 /* Customers */
@@ -477,6 +479,8 @@ textarea {
   color: var(--svg-button-color);
   border: 1px solid var(--svg-button-color);
   border-radius: 4px;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .customers .svg-logo {
@@ -487,8 +491,6 @@ textarea {
 .customers .link:focus {
   color: var(--hover-button-color);
   border: 1px solid var(--hover-button-color);
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 /* Footer */
@@ -526,6 +528,8 @@ textarea {
   text-decoration: none;
   font-style: normal;
   color: var(--secondary-main-text-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .footer .contacts {
@@ -536,6 +540,8 @@ textarea {
   color: var(--footer-address-color);
   text-decoration: none;
   font-style: normal;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .footer-main {
@@ -579,6 +585,8 @@ textarea {
   width: 44px;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .socials-main .svg-items .icon {
@@ -588,8 +596,6 @@ textarea {
 .socials-main .svg-items .link:hover,
 .socials-main .svg-items .link:focus {
   background-color: var(--hover-button-color);
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 /* Portfolio */
@@ -614,6 +620,8 @@ textarea {
   height: 38px;
   padding: 6px 22px;
   border: none;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .main-buttons .item + .item {
@@ -629,8 +637,6 @@ textarea {
     0px 1px 2px var(--buttons-shadow-secondary-color),
     0px 2px 2px var(--team-shadow-main-color);
   border-radius: 4px;
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 .main-examples {
@@ -675,16 +681,19 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.main-examples .item:hover,
-.main-examples .item:focus {
-  box-shadow: 0px 1px 1px var(--team-shadow-main-color),
-    0px 4px 4px var(--portfolio-shadow-color),
-    1px 4px 6px var(--portfolio-secondary-shadow-color);
+.main-examples .link {
   transition-duration: var(--main-duration-time);
   transition-timing-function: var(--main-timing-function);
 }
 
-.main-examples .link {
+.main-examples .link:hover,
+.main-examples .link:focus {
+  box-shadow: 0px 1px 1px var(--team-shadow-main-color),
+    0px 4px 4px var(--portfolio-shadow-color),
+    1px 4px 6px var(--portfolio-secondary-shadow-color);
+}
+
+.main-examples .animated-text {
   position: relative;
   overflow: hidden;
 }
@@ -701,6 +710,8 @@ textarea {
   transform: translateY(100%);
   padding: 0 24px;
   background-color: var(--portfolio-animated-item-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .main-examples .animation-content {
@@ -711,18 +722,10 @@ textarea {
   color: var(--secondary-main-text-color);
 }
 
-.main-examples .item:hover .animation-content {
+.main-examples .link:hover .animation-content,
+.main-examples .link:focus .animation-content {
   transform: translateY(0);
   opacity: 1;
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
-}
-
-.main-examples .item:not(:hover) .animation-content {
-  transform: translateY(100%);
-  opacity: 0;
-  transition-duration: var(--main-duration-time);
-  transition-timing-function: var(--main-timing-function);
 }
 
 /* Modal window */
