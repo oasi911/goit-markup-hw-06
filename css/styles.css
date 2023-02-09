@@ -553,6 +553,10 @@ textarea {
   margin-right: 70px;
 }
 
+.socials-main {
+  margin-right: 93px;
+}
+
 .socials-main .slogan {
   font-weight: 700;
   font-size: 14px;
@@ -596,6 +600,55 @@ textarea {
 .socials-main .svg-items .link:hover,
 .socials-main .svg-items .link:focus {
   background-color: var(--hover-button-color);
+}
+
+.mailing .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-main-text-color);
+  margin-bottom: 20px;
+}
+
+.mailing .input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px var(--shadow-main-color));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--main-background-color);
+  margin-right: 12px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing .button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--hover-button-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-main-text-color);
+  fill: var(--secondary-main-text-color);
+  border: none;
+  box-shadow: 0px 4px 4px var(--shadow-main-color);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mailing .icons {
+  margin-left: 10px;
 }
 
 /* Portfolio */
@@ -777,7 +830,7 @@ textarea {
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid var(--buttons-shadow-main-color);
-  color: #000000;
+  color: var(--text-main-color);
 }
 
 .modal-close {
@@ -785,7 +838,7 @@ textarea {
 }
 
 .modal-close:hover {
-  color: #2196f3;
+  color: var(--hover-button-color);
 }
 
 .modal-title {
@@ -794,8 +847,8 @@ textarea {
   line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--main-button-color);
+  text-shadow: 0px 4px 4px var(--shadow-secondary-color);
   display: block;
   margin-bottom: 12px;
 }
@@ -844,7 +897,7 @@ textarea {
 .modal-label > input:focus,
 .modal-label > textarea:hover,
 .modal-label > textarea:focus {
-  border-color: #2196f3;
+  border-color: var(--hover-button-color);
 }
 
 .modal-icon {
@@ -855,7 +908,7 @@ textarea {
 .modal-label > input:hover ~ .modal-icon,
 .modal-label > input:focus ~ .modal-icon,
 .modal-icon:hover {
-  fill: #2196f3;
+  fill: var(--hover-button-color);
 }
 
 .modal-comment {
@@ -865,7 +918,7 @@ textarea {
 
 .modal-label:hover .modal-comment,
 .modal-label:focus .modal-comment {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px var(--shadow-secondary-color);
 }
 
 .modal-comment {
@@ -902,26 +955,26 @@ textarea {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
   margin-left: 8px;
 }
 
 .modal-checkbox-link {
-  color: #2196f3;
+  color: var(--hover-button-color);
 }
 
 .modal-comment {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .modal-confirm {
   width: 200px;
   height: 50px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--hover-button-color);
+  box-shadow: 0px 4px 4px var(--shadow-main-color);
   border-radius: 4px;
   border: none;
   font-weight: 700;
@@ -931,7 +984,7 @@ textarea {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--secondary-main-text-color);
   margin-left: 124px;
   cursor: pointer;
   transition-duration: var(--main-duration-time);
@@ -942,8 +995,6 @@ textarea {
 .modal-confirm:focus {
   background-color: #188ce8;
 }
-
-/* custom checkbox */
 
 .modal-checkbox {
   position: absolute;
@@ -959,7 +1010,7 @@ textarea {
 .checkbox-custom {
   height: 19px;
   width: 19px;
-  border: 2px solid #000000;
+  border: 2px solid var(--text-main-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -972,6 +1023,6 @@ textarea {
 }
 
 .modal-checkbox:checked + .checkbox-custom {
-  border-color: #2196f3;
-  background-color: #2196f3;
+  border-color: var(--hover-button-color);
+  background-color: var(--hover-button-color);
 }
