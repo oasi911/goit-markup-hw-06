@@ -846,6 +846,8 @@ textarea {
   border-radius: 50%;
   border: 1px solid var(--buttons-shadow-main-color);
   color: var(--text-main-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .modal-close {
